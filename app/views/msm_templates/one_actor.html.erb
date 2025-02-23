@@ -91,7 +91,7 @@
 
       <td>
         <% @dir_id = Movie.where({ :id => "#{a_char.movie_id}"}).at(0).director_id %>
-        <%= Director.where({ :id => "#{@dir_id}"}).at(0) %>
+        <%= Director.where({ :id => "#{@dir_id}"}).at(0).name %>
       </td>
 
       <td>
